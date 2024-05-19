@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+#navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  padding: 0px 60px;
+  padding-top: 5px;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: rgb(233, 237, 240);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline rgb(86, 106, 218);
+  color: rgb(86, 106, 218);
+  transition: 0.5s;
+}
+
+#navbar .fa.fa-bars {
+  color:#fff;
+  font-size: 24px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    padding: 0px 24px;
+  }
+  #navbar ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    z-index: 999;
+    padding: 24px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 300ms;
+  }
+
+  #navbar ul li a {
+    color:#f9f9f9;
+  }
+
+  #navbar .fa.fa-bars {
+    display: block;
+  }
+}
+
+
+
+.mainsec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 72px;
+  height: calc(100vh - 80px);
+  align-items: center;
+  background-color: #000;
+}
+.span{
+  color: #2b6fed;
+}
+
+.mainsec .bg-img-container {
+  height: 100%;
+}
+
+.mainsec .bg-img {
+  width: 145%;
+  height: 100%;
+  margin-left: -235px;
+  object-fit: contain;
+  z-index: 
+}
+
+.mainsec .hello {
+  font-size: 25px;
+  margin-left: 5px;
+  margin-top: 20px;
+  color: #2b6fed;
+}
+
+.mainsec #typing-animation {
+  color: #2b6fed;
+  font-size: 60px;
+
+}
+.maindiv{
+  z-index: 1;
+  margin-bottom: 70px;
+  margin-left: 20px;
+}
+
+.mainsec p {
+  color: white;
+  font-size: 90px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .mainsec p {
+    font-size: 44px;
+  }
+  .mainsec {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0px 24px;
+  }
+}
+
+
+/*----------about------*/
+
+.section2 {
+  min-height: 100vh;
+  background-image: url(bgedu123.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.section2 .span {
+  color: rgb(86, 106, 218);
+}
+
+.section2 .dotted {
+  color: aliceblue;
+  text-decoration: underline dashed blue;
+  font-size: 27px;
+}
+
+.section2 .para {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 30px;
+  color: #c6c3c3;
+}
+
+.section2 .tech {
+  font-size: 22px;
+  color: #fff;
+}
+
+.section2 .abtdiv {
+  
+  padding: 25px 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.projectlinks a {
+  color: #fff;
+}
+
+
+
+.flexbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 0px 140px;
+  margin-top: 36px;
+}
+
+.flexbox .skillphoto img {
+  height: 410px;
+  max-width: 410px;
+  display: block;
+  margin: auto;
+  transition: transform 0.5s;
+}
+
+.flexbox .skillphoto img:hover {
+  transform: scale(1.1);
+}
+
+.flexbox .tab {
+  display: none;
+  font-size: 30px;
+  color: #6e97e4;
+}
+
+.flexbox .tab li {
+  margin-top: 10px;
+}
+
+/* Show the active tab */
+.flexbox .tab.active {
+  display: block;
+  color: #f4f7ff;
+}
+
+.flexbox .tab-nav {
+  list-style: none;
+  display: flex;
+  gap: 72px;
+}
+
+.flexbox .tab-nav-item {
+  cursor: pointer;
+  font-size: 43px;
+  color: #f9f9f9;
+  text-decoration: underline blue;
+}
+
+.flexbox .tab-nav-item:hover {
+  text-decoration: none;
+  color: #c6c3c3;
+  transition: 1s;
+}
+
+@media (max-width: 800px) {
+  .flexbox {
+    grid-template-columns: 1fr;
+    padding: 0px 24px;
+  }
+}
+
+/*..............Education........*/
+
+.edusec {
+  min-height: 100vh;
+  background-image: url(bgedu1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.edusec .section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 136px;
+  row-gap: 72px;
+  padding: 0px 208px;
+  margin-top: 72px;
+}
+
+.edusec .edu {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.edusec .divedu {
+  height: 1px;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid rgb(13, 42, 174);
+  background-color: blue;
+}
+
+.edusec .edu1 {
+  height: 200px;
+  background-color: rgb(192, 199, 201);
+}
+
+.edusec .edu1:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(81, 82, 82);
+  transform: scale(1.01);
+  transition: 0.11s;
+}
+
+.edusec .year1 {
+  color: blue;
+  margin-left: 190px;
+  margin-top: 16px;
+}
+
+.edusec .degree {
+  font-size: 25px;
+  margin-left: 60px;
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+.edusec .college {
+  color: rgb(0, 0, 0);
+  margin-left: 60px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+.edusec .grade {
+  color: #000;
+  margin-left: 60px;
+  margin-top: 9px;
+  font-size: 15px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+@media (max-width: 800px) {
+  .edusec .section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0px 24px;
+  }
+  .edusec {
+    min-height: auto;
+  }
+  
+  .edusec .edu {
+    font-size: 52px;
+  }
+}
+
+
+/*............project.........*/
+
+.projectsec {
+  min-height: 100vh;
+  background-image: url(bgedu1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 30px;
+}
+
+.projectsec h1 {
+  color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+}
+
+.projectsec .divline2 {
+  height: 4px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #19408a;
+}
+
+.projectsec .image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 80px;
+  column-gap: 132px;
+  margin-top: 48px;
+}
+
+.projectsec .image-wrapper {
+  text-align: center;
+}
+
+.projectsec .image-wrapper img {
+  width: 100%;
+  height: 248px;
+  object-fit: cover;
+}
+
+.projectsec .image-wrapper img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.projectsec .image-wrapper h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.projectsec .prjctpara {
+  font-size: 24px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+  color: rgb(183, 183, 188);
+  padding: 12px 0px;
+}
+
+@media (max-width: 800px) {
+  .projectsec h1 {
+    font-size: 52px;
+  }
+  .projectsec .image-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 24px;
+    gap: 36px;
+  }
+}
+
+/*............contact form.........*/
+
+.txtinput {
+  min-height: 100vh;
+  background-image: url(bgedu1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.txtinput h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.txtinput #contact-box {
+  padding-bottom: 34px;
+  margin-top: 50px;
+}
+
+.txtinput #contact-box .form-group {
+  margin-bottom: 16px;
+}
+
+.txtinput #contact-box .form-group label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #c6c3c3;
+}
+
+.txtinput #contact-box input,
+.txtinput #contact-box textarea {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 12px;
+  font-size: 18px;
+  background-color: rgb(rgb(215, 211, 211), green, blue)
+}
+
+.txtinput #contact-box form {
+  width: 40%;
+  margin: auto;
+}
+
+.txtinput .button {
+  color: azure;
+  display: block;
+  margin: 20px auto 0px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 9px 15px;
+  background: rgb(7, 9, 156);
+  border: 1px solid rgb(7, 9, 156);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.txtinput .button:hover {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(2, 5, 9);
+  transition: 1s;
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+  .txtinput {
+    min-height: auto;
+  }
+  .txtinput #contact-box {
+    padding: 0px 24px;
+  }
+  .txtinput #contact-box form {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.contactinfo1 {
+  min-height: 100vh;
+  background-image: url(bg_1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contactinfo1 .line3 {
+  height: 3px;
+  width: 800px;
+  background-color: #0241ff;
+  text-align: center;
+  margin: auto;
+}
+
+.contactinfo1 .cnpara {
+  font-size: 20px;
+  color: #c6c3c3;
+  text-align: center;
+  margin-top: 40px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+.contactinfo1 .contact-title {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  padding-top: 70px;
+}
+
+.contactinfo1 .contactlist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+.contactinfo1 i {
+  font-size: 90px;
+  color: #0645ff;
+}
+
+.contactinfo1 i:hover {
+  color: #19408a;
+  cursor: pointer;
+}
+
+.contactinfo1 .contactname {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 48px;
+  padding: 0px 24px;
+  gap: 28px;
+}
+
+.contactinfo1 .contactname h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 8px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+.contactinfo1 .contactname p {
+  color: #fff;
+  margin-top: 7px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+.contactinfo1 .cntctdiv {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .contactinfo1 .contact-title {
+    font-size: 52px;
+  }
+  .contactinfo1 {
+    min-height: auto;
+  }
+
+  .contactinfo1 .contactname {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*............footer.........*/
+
+
+.footer {
+  background: black;
+  padding: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.footer p {
+  margin: 10px auto;
+  line-height: 28px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+}
+
+/*social -media*/
+.footer .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.footer .socials li {
+  margin: 0 10px;
+}
+
+.footer .socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.footer .socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.footer .socials a:hover i {
+  color: dodgerblue;
+}
+
+/* copyright*/
+.footer .footer-copyright {
+  padding-top: 20px;
+  font-family: '"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif';
+  padding-bottom: 13px;
+}
+
+.footer .footer-copyright p {
+  word-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+}
